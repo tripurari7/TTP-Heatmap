@@ -1,7 +1,7 @@
 # MITRE ATT&CK Vulnerability Risk Analysis Platform
 
 ## Overview
-A comprehensive security analysis platform that maps vulnerabilities to MITRE ATT&CK framework, providing risk assessment and threat modeling capabilities.
+A security analysis utility that maps vulnerabilities to MITRE ATT&CK framework, providing risk assessment and threat modeling capabilities.
 
 ## Architecture
 
