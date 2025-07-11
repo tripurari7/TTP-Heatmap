@@ -1,0 +1,52 @@
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+xlrd>=2.0.1
+
+# Visualization and Reporting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+dash>=2.10.0
+dash-bootstrap-components>=1.4.0
+
+# MITRE ATT&CK Integration
+attackcti>=0.3.7
+stix2>=3.0.0
+
+# Machine Learning and NLP
+scikit-learn>=1.3.0
+nltk>=3.8.0
+spacy>=3.6.0
+textblob>=0.17.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+click>=8.1.0
+rich>=13.0.0
+tqdm>=4.65.0
+
+# Security and Cryptography
+cryptography>=41.0.0
+hashlib
+
+# Network and API
+requests>=2.31.0
+aiohttp>=3.8.0
+
+# Database (Optional)
+sqlalchemy>=2.0.0
+sqlite3
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Additional Security Tools
+cvss>=2.8 

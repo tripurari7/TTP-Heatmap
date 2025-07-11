@@ -1,0 +1,143 @@
+# MITRE ATT&CK Vulnerability Analysis Platform Configuration
+
+# Application Settings
+app:
+  name: "MITRE ATT&CK Vulnerability Risk Analysis Platform"
+  version: "2.0.0"
+  description: "Enterprise-grade security analysis with advanced threat modeling"
+  
+# Data Processing Settings
+data_processing:
+  supported_formats:
+    - ".xlsx"
+    - ".xls" 
+    - ".csv"
+  max_file_size_mb: 100
+  encoding: "utf-8"
+  sheet_name: 0  # First sheet for Excel files
+  
+# MITRE ATT&CK Settings
+mitre:
+  framework_version: "14.1"
+  cache_enabled: true
+  cache_duration_hours: 24
+  api_timeout_seconds: 30
+  max_techniques_per_vulnerability: 10
+  
+# Risk Assessment Settings
+risk_assessment:
+  weights:
+    cvss_score: 0.25
+    exploitability: 0.20
+    business_impact: 0.25
+    threat_landscape: 0.15
+    asset_criticality: 0.10
+    control_effectiveness: 0.05
+  
+  thresholds:
+    critical_risk: 0.8
+    high_risk: 0.6
+    medium_risk: 0.4
+    low_risk: 0.2
+    
+  business_impact_matrix:
+    financial_impact:
+      critical: 1.0
+      high: 0.75
+      medium: 0.50
+      low: 0.25
+      minimal: 0.10
+    operational_impact:
+      critical: 1.0
+      high: 0.80
+      medium: 0.60
+      low: 0.30
+      minimal: 0.15
+    reputational_impact:
+      critical: 1.0
+      high: 0.85
+      medium: 0.65
+      low: 0.40
+      minimal: 0.20
+    regulatory_impact:
+      critical: 1.0
+      high: 0.90
+      medium: 0.70
+      low: 0.45
+      minimal: 0.25
+
+# Visualization Settings
+visualization:
+  dpi: 300
+  figsize: [12, 8]
+  style: "seaborn-v0_8"
+  color_palette: "husl"
+  save_format: "png"
+  interactive_dashboard: true
+  
+# Output Settings
+output:
+  directory: "output"
+  create_timestamped_folders: false
+  include_metadata: true
+  compression: false
+  
+# Logging Settings
+logging:
+  level: "INFO"
+  file: "mitre_analysis.log"
+  max_file_size_mb: 10
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+# Security Settings
+security:
+  enable_ssl_verification: true
+  api_key_encryption: true
+  data_encryption: false
+  audit_logging: true
+  
+# Performance Settings
+performance:
+  max_workers: 4
+  chunk_size: 1000
+  memory_limit_mb: 2048
+  enable_caching: true
+  
+# Custom Mappings
+custom_mappings:
+  sql_injection:
+    primary_ttps: ["T1190", "T1059"]
+    confidence: 0.95
+    attack_chain: ["Initial Access", "Execution"]
+    keywords: ["sql", "injection", "database", "query"]
+  
+  xss:
+    primary_ttps: ["T1190", "T1059.007"]
+    confidence: 0.90
+    attack_chain: ["Initial Access", "Execution"]
+    keywords: ["xss", "cross-site", "scripting", "javascript"]
+  
+  rce:
+    primary_ttps: ["T1190", "T1059"]
+    confidence: 0.95
+    attack_chain: ["Initial Access", "Execution"]
+    keywords: ["rce", "remote code", "execution", "command"]
+  
+  privilege_escalation:
+    primary_ttps: ["T1068", "T1134"]
+    confidence: 0.85
+    attack_chain: ["Privilege Escalation"]
+    keywords: ["privilege", "escalation", "elevation", "admin"]
+  
+  authentication_bypass:
+    primary_ttps: ["T1078", "T1190"]
+    confidence: 0.80
+    attack_chain: ["Defense Evasion", "Initial Access"]
+    keywords: ["auth", "bypass", "authentication", "login"]
+  
+  data_exfiltration:
+    primary_ttps: ["T1041", "T1005"]
+    confidence: 0.85
+    attack_chain: ["Collection", "Exfiltration"]
+    keywords: ["exfiltration", "data", "theft", "extract"] 
