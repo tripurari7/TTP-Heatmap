@@ -64,7 +64,7 @@ mitre-vulnerability-platform/
 - **Custom mapping rules**: Enterprise-specific TTP relationships
 - **Attack chain analysis**: Full kill chain mapping
 
-### 2. Enterprise Risk Assessment
+### 2. Risk Assessment
 - **Multi-factor risk calculation**: CVSS, business impact, threat landscape
 - **Market-specific risk profiles**: Regional threat intelligence integration
 - **Temporal risk adjustment**: Time-based risk evolution
@@ -77,7 +77,7 @@ mitre-vulnerability-platform/
 - **Threat actor profiling**: APT group targeting analysis
 
 ### 4. Executive Reporting
-- **CISO dashboard**: Executive-level risk overview
+- **Executive dashboard**: Executive-level risk overview
 - **Technical deep-dive**: Detailed vulnerability analysis
 - **Compliance reporting**: Regulatory framework alignment
 - **Trend analysis**: Historical risk evolution
@@ -97,9 +97,6 @@ python main.py --input vulnerabilities.xlsx --output reports/
 ## Security Compliance
 
 - **MITRE ATT&CK Framework**: Full compliance with latest version
-- **NIST Cybersecurity Framework**: Risk assessment alignment
-- **ISO 27001**: Information security management
-- **SOC 2**: Security controls assessment
 
 ## Contributing
 
