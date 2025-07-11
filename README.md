@@ -1,7 +1,7 @@
 # MITRE ATT&CK Vulnerability Risk Analysis Platform
 
 ## Overview
-A comprehensive security analysis platform that maps vulnerabilities to MITRE ATT&CK framework, providing enterprise-grade risk assessment and threat modeling capabilities.
+A comprehensive security analysis platform that maps vulnerabilities to MITRE ATT&CK framework, providing risk assessment and threat modeling capabilities.
 
 ## Architecture
 
@@ -61,9 +61,8 @@ mitre-vulnerability-platform/
 ### 1. Advanced MITRE ATT&CK Mapping
 - **Multi-layer TTP mapping**: Technique, Sub-technique, and Procedure mapping
 - **Confidence scoring**: AI-powered mapping accuracy assessment
-- **Custom mapping rules**: Enterprise-specific TTP relationships
-- **Attack chain analysis**: Full kill chain mapping
-
+- **Custom mapping rules**: Specific TTP relationships
+  
 ### 2. Risk Assessment
 - **Multi-factor risk calculation**: CVSS, business impact, threat landscape
 - **Market-specific risk profiles**: Regional threat intelligence integration
